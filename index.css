@@ -1,12 +1,13 @@
 ul {
 list-style-type: none;
 margin: 0;
-padding: 0 0 20 0;
+padding: 0;
 overflow: hidden;
 background-color: #333;
 position: fixed;
 top: 0;
 width: 100%;
+float: center;
 }
 
 li {
@@ -22,7 +23,6 @@ padding: 14px 16px;
 text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
 background-color: #111;
 }
@@ -35,10 +35,15 @@ li:last-child {
 border-right: none;
 }
 
+.page{
+  padding-top: 100;
+}
+
+
 #bio{
-  float: right;
+  float: left;
 }
 
 #profilePhoto{
-  float:left;
+  float: left;
 }
