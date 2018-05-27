@@ -1,47 +1,66 @@
 ul {
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-background-color: #333;
-position: fixed;
-top: 0;
-width: 100%;
-float: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  float: center;
 }
 
 li {
-float: left;
-border-right: 1px solid #bbb;
+  float: left;
+  border-right: 1px solid #bbb;
 }
 
 li a {
-display: block;
-color: white;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 li a:hover {
-background-color: #111;
+  background-color: #111;
 }
 
 .active {
-background-color: #4CAF50;
+  background-color: #4CAF50;
 }
 
 li:last-child {
-border-right: none;
+  border-right: none;
+}
+
+img{
+  /*makes it circular*/
+  border-radius: 50%;
+  /*these two lines might be useless*/
+  opacity: 1.0;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+img:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
 .page{
   padding-top: 100;
 }
 
+.project{
+  float: left;
+  padding: 20 20 20 20;
+}
+
 
 #bio{
   float: left;
+  padding-left: 20;
 }
 
 #profilePhoto{
